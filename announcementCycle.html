@@ -6,14 +6,23 @@
 	tips.push("?");
 	
 	var output = document.getElementById("swap");
-	output.innerHTML = tips[0];
-	var tipLine = 1;
+	var tipLine = randomize(0);
+	output.innerHTML = tips[tipLine];
+	tipLine = randomize(tipLine);
 	
 	var loop = setInterval(function(){
 		fadeTransition(tips[tipLine]);
-		tipLine = Math.floor(Math.random() * tips.length);
+		tipLine = randomize(tipLine);
 		},10000);
-	
+
+	function randomize(oldVal){
+		var retVal = oldVal;
+		while (retVal == oldVal) {
+			retVal = Math.floor(Math.random() * tips.length);
+		}
+		return retVal;
+	}
+
 	function fadeTransition(newText) {
 		var nextOpacity = 12;
 		var fadeOut = setInterval(function(){
