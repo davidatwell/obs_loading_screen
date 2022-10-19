@@ -11,11 +11,7 @@
 	
 	var loop = setInterval(function(){
 		fadeTransition(tips[tipLine]);
-		if(tipLine < tips.length - 1) {
-			tipLine++;
-		} else {
-			tipLine = 0;
-		}
+		tipLine = Math.floor(Math.random() * tips.length);
 		},10000);
 	
 	function fadeTransition(newText) {
