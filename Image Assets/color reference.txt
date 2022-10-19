@@ -1,2 +1,0 @@
-Background: #29120C
-Text: #A98030
