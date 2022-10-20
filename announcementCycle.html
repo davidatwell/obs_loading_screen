@@ -6,14 +6,17 @@
 	
 	tips.push("!");
 	tips.push("?");
+	tips = tips.filter(tip => 
+		(!tip.system || !preferences.system || tip.system == preferences.system) && 
+		(!tip.setting || !preferences.setting || tip.setting == preferences.setting));
 	
 	var output = document.getElementById("swap");
 	var tipLine = randomize(-1);
-	output.innerHTML = tips[tipLine].text;
+	output.innerHTML = composeText(tipLine);
 	tipLine = randomize(tipLine);
 	
 	var loop = setInterval(function(){
-		fadeTransition(tips[tipLine].text);
+		fadeTransition(composeText(tipLine));
 		tipLine = randomize(tipLine);
 		},10000);
 
@@ -23,6 +26,11 @@
 			retVal = Math.floor(Math.random() * tips.length);
 		}
 		return retVal;
+	}
+
+	function composeText(tipLine){
+		var tip = tips[tipLine];
+		return (tip.heading ? "<strong>" + tip.heading + "</strong><br>" : "") + (tip.number ? "#" + tip.number + ": " : "") + tip.text;
 	}
 
 	function fadeTransition(newText) {
