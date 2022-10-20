@@ -6,8 +6,17 @@
 	};
 	var tips = [];
 	
-	tips.push("!");
-	tips.push("?");
+	//system tips:
+	//system agnostic tips
+	tips.push({number: 29, text:"Just because an NPC asks you to, doesn't mean you HAVE to."});
+	
+	//pf2e tips
+	tips.push({system:"pf2e", number: 1, text:"The basic actions in combat are Aid, Crawl, Delay, Drop Prone, Escape, Interact, Leap, Ready, Release, Seek, Sense Motive, Stand, Step, Stride, Strike, and Take Cover."});
+
+	//sf tips
+
+	//dnd tips
+
 	tips = tips.filter(tip => 
 		(!tip.system || !preferences.system || tip.system == preferences.system) && 
 		(!tip.setting || !preferences.setting || tip.setting == preferences.setting));
