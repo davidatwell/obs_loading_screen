@@ -88,7 +88,8 @@
 
 	function composeText(tipLine){
 		var tip = tips[tipLine];
-		return (tip.heading ? "<strong>" + tip.heading + "</strong><br>" : "") + (tip.number ? "#" + tip.number + ": " : "") + tip.text;
+		//return (tip.heading ? "<strong>" + tip.heading + "</strong><br>" : "") + (tip.number ? "#" + tip.number + ": " : "") + tip.text;
+		return (tip.heading ? "<strong>" + tip.heading + "</strong><br>" : "") + "#" + tipLine + ": " + tip.text;
 	}
 
 	function fadeTransition(newText) {
