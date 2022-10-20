@@ -2,7 +2,9 @@
 
 	var preferences = {
 		system: 	"pf2e",
-		setting: 	"guild magic"
+		setting: 	"guild magic",
+		timeout: 	20000,
+		fadeSpeed: 	21
 	};
 	var tips = [];
 	
@@ -98,7 +100,7 @@
 	var loop = setInterval(function(){
 		fadeTransition(composeText(tipLine));
 		tipLine = randomize(tipLine);
-		},10000);
+		},preferences.timeout);
 
 	function randomize(oldVal){
 		var retVal = oldVal;
@@ -132,7 +134,7 @@
 				nextOpacity--;
 			}
 			
-		},21)
+		},preferences.fadeSpeed)
 	}
 
 	//quick test to confirm uniform distribution: run the following line in console on this page and check the objects in the distribution array
