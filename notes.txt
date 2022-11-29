@@ -1,7 +1,21 @@
-Status: Disguised
-B-'s Oxidus: loaded
-B-'s Corrodius: unloaded
+Status: 
 
+Tellicherry: loaded
+Malabar: loaded
+
+
+
+
+
+
+
+
+
+
+
+
+Oxidus: loaded
+Corrodius: loaded
 
 
 
