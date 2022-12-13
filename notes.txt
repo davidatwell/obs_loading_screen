@@ -1,5 +1,6 @@
-Status: 
+Status: Normal
 
+Guns: Manifested
 Tellicherry: loaded
 Malabar: loaded
 
