@@ -1,4 +1,6 @@
-Status: Normal
+Status: 
+9 persistent acid
+(wash it off first round)
 
 Guns: Manifested
 Tellicherry: loaded
@@ -15,8 +17,6 @@ Malabar: loaded
 
 
 
-Oxidus: loaded
-Corrodius: loaded
 
 
 
@@ -42,7 +42,6 @@ Corrodius: loaded
 
 
 
-Bisca 
 
 
 
@@ -62,10 +61,7 @@ Bisca
 
 
 
-Status: Dying 1
 
-Tellicherry: LOADED
-Malabar: LOADED
 
 
 
