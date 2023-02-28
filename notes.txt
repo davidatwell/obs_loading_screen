@@ -1,11 +1,9 @@
 Status: 
-9 persistent acid
-(wash it off first round)
 
-Guns: Manifested
+Guns: Manifested,
+     unholstered
 Tellicherry: loaded
 Malabar: loaded
-
 
 
 
