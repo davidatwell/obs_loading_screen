@@ -1,12 +1,14 @@
-Status: 
+Status: Human form
 
 Guns: Manifested,
-     unholstered
+     holstered
 Tellicherry: loaded
 Malabar: loaded
 
-
-
+Trinity Raven:
+- Vidaldus Taca
+- Fukoro
+- IKARUGA
 
 
 
