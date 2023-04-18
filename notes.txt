@@ -1,9 +1,29 @@
 Status: Human form
 
-Guns: Manifested,
-     holstered
+Guns: Manifested, Armed
 Tellicherry: loaded
 Malabar: loaded
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Trinity Raven:
 - Vidaldus Taca
