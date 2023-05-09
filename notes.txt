@@ -1,8 +1,8 @@
 Status: Human form
 
 Guns: Manifested, Armed
-Tellicherry: loaded
-Malabar: loaded
+Malabar: discharged
+Tellicherry: discharged
 
 
 
