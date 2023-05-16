@@ -1,8 +1,21 @@
 Status: Human form
 
-Guns: Manifested, Armed
-Malabar: discharged
-Tellicherry: discharged
+Guns: Lost in space...
+
+
+
+
+
+
+
+
+
+
+
+
+
+Malabar: loaded
+Tellicherry: loaded
 
 
 
