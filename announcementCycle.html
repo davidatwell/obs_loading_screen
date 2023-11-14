@@ -1,4 +1,4 @@
-<html><body style="width:1500px;overflow:hidden;"><h1 style="font-family:'Metropolis';font-weight:300;text-align:center;color:#dedede;font-size:64px;text-shadow:5px 5px 5px rgba(9, 24, 51, 0.9);"><span id='swap'></span></h1></body><script>
+<html><head><style>.strike{text-decoration: line-through;}</style></head><body style="width:1500px;overflow:hidden;"><h1 style="font-family:'Metropolis';font-weight:300;text-align:center;color:#dedede;font-size:64px;text-shadow:5px 5px 5px rgba(9, 24, 51, 0.9);"><span id='swap'></span></h1></body><script>
 
 	var preferences = {
 		system: 	"pf2e",
@@ -63,8 +63,51 @@
 	tips.push({system:"pf2e", heading: "Pathfinder 2e Areas of Effect", text: "A <strong>cone</strong> effect affects a quarter-circle area equal to the cone value on each edge, starting on an adjacent square (but not your square)."});
 	tips.push({system:"pf2e", heading: "Pathfinder 2e Areas of Effect", text: "An <strong>emanation</strong> effect has a radius equal to its emanation value, centered on you."});
 	tips.push({system:"pf2e", heading: "Pathfinder 2e Areas of Effect", text: "A <strong>line</strong> effect affects all creatures whose space it overlaps. Unless the effect says otherwise, it has a width of five feet."});
-	tips.push({system:"pf2e", heading: "Pathfinder 2e Conditions", text: "If you're prone, you're flat-footed and you take a -2 penalty to attacks, but you can Take Cover to get greater cover against ranged attacks."});
-
+	tips.push({system:"pf2e", heading: "Pathfinder 2e Conditions", text: "If you're prone, you're <span class='strike'>flat-footed</span> <em>off-guard</em> and you take a -2 penalty to attacks, but you can Take Cover to get greater cover against ranged attacks."});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Spell Level</span>&rdquo; ➡️ &ldquo;<strong>Spell Rank</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Flat-Footed</span>&rdquo; ➡️ &ldquo;<strong>Off-Guard</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Alignments</span>&rdquo; ➡️ &ldquo;<strong>Edicts and Anathema</strong>&rdquo;<br>(Holy, Unholy, and Sanctified)<br>&mdash;and they're optional"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "Spirit Damage:<br>&ldquo;<span class='strike'>Good Damage</span>&rdquo; ➡️ &ldquo;<strong>Holy Damage</strong>&rdquo;<br>&ldquo;<span class='strike'>Evil Damage</span>&rdquo; ➡️ &ldquo;<strong>Unholy Damage</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "Ability scores are going away completely.<br>STR, DEX, CON, INT, WIS, and CHA are Attribute Modifiers."});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Tiefling/Aasimar</span>&rdquo; ➡️ &ldquo;<strong>Nephilim</strong> Versatile Heritage&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Magic Missile</span>&rdquo; ➡️ &ldquo;<strong>Force Missile</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Gnoll</span>&rdquo; ➡️ &ldquo;<strong>Kholo</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "The updated <strong>Core Ancestries</strong> are Catfolk, Dwarf, Elf, Gnome, Goblin, Halfling, Hobgoblin, Human, Kholo, <strong>Leshy</strong>, and <strong>Orc</strong>"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "The updated <strong>Near-Core Ancestries</strong> are Kobold, Lizardfolk, Ratfolk, and Tengu"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "The updated <strong>Versatile Heritages</strong> are Changeling, Dhampir, Duskwalker, Nephilim, and <strong>Mixed Ancestry</strong>"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "The updated <strong>Mixed Ancestry</strong> Versatile Heritage now allows any two Ancestries to be mixed, not just Human &amp; Elf or Human &amp; Orc"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "The Leshy and the Orc are now Core Ancestries"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Attack of Opportunity</span>&rdquo; ➡️ &ldquo;<strong>Reactive Strike</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Ability Modifiers</span>&rdquo; ➡️ &ldquo;<strong>Attribute Modifiers</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Focus spell component</span>&rdquo; ➡️ &ldquo;<strong>Locus</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Focus spell component</span>&rdquo; ➡️ &ldquo;<strong>Locus</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Material Plane</span>&rdquo; ➡️ &ldquo;<strong>The Universe</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Metamagic</span>&rdquo; ➡️ &ldquo;<strong>Spellshape</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Mithral</span>&rdquo; ➡️ &ldquo;<strong>Dawnsilver</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Negative</span>&rdquo; ➡️ &ldquo;<strong>Void</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Positive</span>&rdquo; ➡️ &ldquo;<strong>Vitality</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "Schools of magic are literal Schools (organizations) now"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Djinni</span>&rdquo; ➡️ &ldquo;<strong>Jaathoom</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Efreeti</span>&rdquo; ➡️ &ldquo;<strong>Ifrit</strong>&rdquo;<br>&ldquo;<span class='strike'>Ifrit</span>&rdquo; ➡️ &ldquo;<strong>Naari</strong>&rdquo;<br>I'm sure this won't cause any confusion"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Janni</span>&rdquo; ➡️ &ldquo;<strong>Jann</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Mephit</span>&rdquo; ➡️ &ldquo;<strong>Scamp</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Scorching Ray</span>&rdquo; ➡️ &ldquo;<strong>Blazing Bolt</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Burning Hands</span>&rdquo; ➡️ &ldquo;<strong>Breathe Fire</strong>&rdquo;<br>(Everyone was flavoring it that way anyway)"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Ghost Sound</span>&rdquo; ➡️ &ldquo;<strong>Figment</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Meteor Swarm</span>&rdquo; ➡️ &ldquo;<strong>Falling Stars</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Cone of Cold</span>&rdquo; ➡️ &ldquo;<strong>Howling Blizzard</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Produce Flame</span>&rdquo; ➡️ &ldquo;<strong>Ignition</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Raise Dead</span>&rdquo; ➡️ &ldquo;<strong>Invoke Spirits</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Stoneskin</span>&rdquo; ➡️ &ldquo;<strong>Mountain Resilience</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Mage Armor</span>&rdquo; ➡️ &ldquo;<strong>Mystic Armor</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Magic Weapon</span>&rdquo; ➡️ &ldquo;<strong>Runic Weapon</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Mage Hand</span>&rdquo; ➡️ &ldquo;<strong>Telekinetic Hand</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Shocking Grasp</span>&rdquo; ➡️ &ldquo;<strong>Thunderstrike</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "&ldquo;<span class='strike'>Dimenson Door</span>&rdquo; ➡️ &ldquo;<strong>Translocate</strong>&rdquo;"});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "Crafting's time has decreased from 4 days to 2 days, or 1 day if you have the formula."});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "Aid's DC has dropped from 20 to 15."});
+	tips.push({system:"pf2e", heading: "Pathfinder Remaster Changes", text: "Recall Knowledge has been buffed in the Remaster"});
+	
 
 	//sf tips
 
